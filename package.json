@@ -1,0 +1,41 @@
+{
+  "name": "html-body-validator",
+  "version": "1.0.0",
+  "description": "一个用于验证和处理HTML响应体的工具包",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build completed\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "html",
+    "validator",
+    "response",
+    "body",
+    "cloudflare",
+    "workers",
+    "web"
+  ],
+  "author": "你的名字",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/你的用户名/html-body-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/你的用户名/html-body-validator/issues"
+  },
+  "homepage": "https://github.com/你的用户名/html-body-validator#readme",
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
