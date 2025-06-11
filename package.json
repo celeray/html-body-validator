@@ -1,12 +1,18 @@
 {
   "name": "html-body-validator",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "一个用于验证和处理HTML响应体的工具包",
-  "main": "index.js",
-  "module": "index.mjs",
+  "type": "module",
+  "main": "index.mjs",
   "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test.mjs",
     "build": "echo \"Build completed\"",
     "prepublishOnly": "npm run build"
   },
@@ -17,25 +23,25 @@
     "body",
     "cloudflare",
     "workers",
-    "web"
+    "web",
+    "esm"
   ],
-  "author": "你的名字",
+  "author": "celeray",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/你的用户名/html-body-validator.git"
+    "url": "git+https://github.com/celeray/html-body-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/你的用户名/html-body-validator/issues"
+    "url": "https://github.com/celeray/html-body-validator/issues"
   },
-  "homepage": "https://github.com/你的用户名/html-body-validator#readme",
+  "homepage": "https://github.com/celeray/html-body-validator#readme",
   "files": [
-    "index.js",
     "index.mjs",
     "index.d.ts",
     "README.md"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   }
 }
